@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator_Milan</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <div class="calculator_body">
+                <input type="text" id="display" name="display" placeholder="0" />
+                <div class="calculator_keys">
+                    <input type="number" name="operand" id="operand_1" placeholder="0" />
+                    <input type="number" name="operand" id="operand_2" placeholder="0" />
+                    <div class="operator">
+                        <button id="addition" onclick="perform_('addition')">ADD</button>
+                        <button id="subtraction" onclick="perform_('subtraction')">
+                            SUB
+                        </button>
+                        <button id="multiplication" onclick="perform_('multiplication')">
+                            MUL
+                        </button>
+                        <button id="division" onclick="perform_('division')">DIV</button>
+                        <button id="remainder" onclick="perform_('remainder')">
+                            REM
+                        </button>
+                        <button id="clear" onclick="clear_screen()">AC</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

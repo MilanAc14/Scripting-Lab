@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(103, 100, 58);
+}
+
+.container {
+    background-color: rgb(142, 135, 135);
+    width: 500px;
+    height: 550px;
+    border-radius: 15px 15px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.calculator_body {
+    background-color: rgb(187, 198, 187);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px;
+    margin: 10px 0px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+}
+
+#display {
+    width: 400px;
+    height: 100px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.calculator_keys input {
+    width: 150px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 15px 15px;
+    margin: 30px 40px;
+    background-color: rgba(175, 170, 170, 0.479);
+    display: inline-flex;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.operator button {
+    width: 150px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(12, 11, 11);
+    border-radius: 15px 15px;
+    border-color: rgb(30, 69, 69);
+    margin: 5px 5px;
+    box-shadow: 5px 5px 5px 5px rgba(68, 56, 56, 0.5);
+    background-color: #ff9500;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+    font-size: 50px;
+}
+
+button:hover {
+    color: #ff9500;
+    background-color: white;
+}
