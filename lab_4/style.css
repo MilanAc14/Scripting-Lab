@@ -1,11 +1,6 @@
-*{
-    margin: 2px;
-    padding: 2px;
-    box-sizing: border-box;
-
-}
 body {
     display: flex;
+    background-color: aqua;
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
@@ -13,14 +8,11 @@ body {
 }
 .container{
     height: 100%;
-    width: 23%;
+    width: 1000px;
     padding: 20px;
     background-color: rgb(90, 52, 25);
-    border-radius: 20px;
-    
-
+    border-radius: 20px; 
 }
-
 .btn{
     width: 100%;
     padding: 5px 15px;
@@ -33,7 +25,6 @@ body {
 .btn:hover{
     cursor: pointer;
     background-color:rgb(28, 3, 76);
-
 }
 .form-tittle{
     color: white;
@@ -63,4 +54,3 @@ input{
     padding: 5px 15px;
     font-family:"poppins";
 }
-
