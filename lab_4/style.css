@@ -1,18 +1,28 @@
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+
+}
 body {
     display: flex;
-    background-color: aqua;
+    background-color: rgb(161, 172, 170);
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100vh;
+    width: 100%; 
     font-family: 'Poppins', sans-serif;
 }
 .container{
     height: 100%;
-    width: 1000px;
+    width:40%;
     padding: 20px;
-    background-color: rgb(90, 52, 25);
+    background-color: rgb(163, 160, 159);
     border-radius: 20px; 
+    color: white;
+
 }
+
 .btn{
     width: 100%;
     padding: 5px 15px;
@@ -25,6 +35,7 @@ body {
 .btn:hover{
     cursor: pointer;
     background-color:rgb(28, 3, 76);
+
 }
 .form-tittle{
     color: white;
@@ -40,10 +51,8 @@ body {
 .form-group{
 margin-bottom: 15px;
 }
-.form-group.error input{
-    border: 1px solid red;
-}
-.form-group.error .message{
+
+.form-group.message{
     color: red;
 }
 label,input{
@@ -54,3 +63,4 @@ input{
     padding: 5px 15px;
     font-family:"poppins";
 }
+

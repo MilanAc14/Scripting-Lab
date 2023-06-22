@@ -79,31 +79,31 @@ if(isset($_POST['confirmPassword']))
     <h1 class="form-tittle">Sign Up</h1>
     <div class="form-group" id="name-group">
         <label for="">Full Name</label>
-        <input type="text" name="name" id=""/>
+        <input type="text" name="name" />
         <p class="message"><?php echo $nameError ;?></p>
         </div>
 
 
         <div class="form-group " id="email-group" >
             <label for="">Email Address</label>
-            <input type="email" name="email" id="" required/>
+            <input type="email" name="email"  />
             <p class="message"><?php echo $emailError ;?> </p>    
         </div>
         <div class="form-group" id="username-group">
             <label for="username">Username</label>
-            <input type="text" name="username" id="" required>
+            <input type="text" name="username"  >
             <p class="message"><?php echo $usernameError ;?></p>
  
         <div class="form-group" id="password-group">
             <label for="">Password</label>
-            <input type="password" name="password" id=""/>
+            <input type="password" name="password"/>
             <p class="message"><?php echo $passwordError ;?></p>
     
         </div>
 
         <div class="form-group">
             <label for="">Confirm Password</label>
-            <input type="password" name="confirmPassword" id=""/>
+            <input type="password" name="confirmPassword" />
             <p class="message"><?php echo $confirmpaswordError ;?></p>
         </div>
  
@@ -133,12 +133,16 @@ $connection->select_db($dbName);
 
 if(isset($_POST['signup']))
 {
-    $email=$_POST['email'];
-    $confirmpassword = $_POST['confirmPassword'];
-    $password = $_POST['password'];
-    $userName = $_POST['username'];
-    $fullName = $_POST['name']; 
+    $email=trim($_POST['email']);
+    $confirmpassword = trim($_POST['confirmPassword']);
+    $password =trim( $_POST['password']);
+    $userName = trim($_POST['username']);
+    $fullName = trim($_POST['name']); 
    
+   if( empty($fullName) ||empty($userName)||empty($password)||empty($email)||empty($confirmpassword)){
+    echo "please fill all the fields";
+   }
+   else{
     $sql="
     INSERT INTO users_info VALUES('$fullName','$email','$userName','$password','$confirmpassword');
         ";
@@ -150,6 +154,7 @@ if(isset($_POST['signup']))
     else{
             echo"error in inserting data";
         }
+    }
 }
 ?>
 
